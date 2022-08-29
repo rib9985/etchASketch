@@ -1,1 +1,1 @@
-A Etch-A-Sketch game for The Odin Project curriculum.
+## A Etch-A-Sketch game for The Odin Project curriculum.
