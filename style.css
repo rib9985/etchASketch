@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap'); /*font-family: 'DynaPuff', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');/*'Secular One', sans-serif;*/
+
+.header{
+   flex-direction: column;
+    font-family: 'DynaPuff', cursive;
+   font-size: 2rem;
+   justify-content: center;
+   align-items: center;
+}
