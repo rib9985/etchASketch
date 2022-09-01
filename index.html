@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-A-Sketch</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
-        <div class="flexContainer">
-            <div class="header"> <h1>Etch-A-Sketch</h1> </div>
-        <div class = 'content'> 
+  </head>
+
+  <body>
+    <div class="flexContainer">
+      <div class="header">
+        <h1>Etch-A-Sketch</h1>
+      </div>
+      <div class="content">
         <div class="options">
-            <div class="gridSize">
-                <div class="gridSlider">
-                    <input type="range" min="16" max="64" value="20" class="slider" id="gridRange">
-                    <div id="sizeDisplay"></div>
-                <div id="gridValue"></div>
+          <div class="gridSize">
+            <div class="gridSlider">
+              <input
+                type="range"
+                min="16"
+                max="64"
+                value="20"
+                class="slider"
+                id="gridRange"
+              />
+              <div id="sizeDisplay"></div>
+              <div id="gridValue"></div>
             </div>
+          </div>
+          <div>
+            <input type="color" value="#333333" id="colorPicker" />
+          </div>
+          <button onclick="eraseSquare()" class="eraser">Eraser</button>
+          <button onclick="clearCanvas()" class="clearCanvas">
+            Clear Canvas
+          </button>
         </div>
-            <input type ='color' value="#333333" id="colorPicker">Color Picker</input>
-            
-            <button onclick="eraseSquare()" class ="eraser">Eraser placeholder</button>
-            <button onclick="clearCanvas()" class="clearCanvas">Clear Canvas</button>
-        </div>    
-        </div>
-        <div class="gridContainer">
-            <div id="brushMode"></div>
+      </div>
+      <div class="gridContainer">
+        <div id="brushMode"></div>
         <div class="grid"></div>
-        </div>
-        </div>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
-
-
